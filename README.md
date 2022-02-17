@@ -8,7 +8,7 @@
 ![immagine schema elettrico](https://github.com/jacktisparrow/BuzzerTest/blob/main/schema%20buzz.png)
 ## Schema montaggio:
 ![immagine schema elettrico](https://github.com/jacktisparrow/BuzzerTest/blob/main/immagine%20schema%20montaggio.jpg)
-### Utilizzo il sistema di RTOS degli eventgroup per gestire gli eventi , in questo caso l'evento è il pulsante premuto.
+### Per gestire gli eventi utilizzo gli eventgroupintegrati nel sistema di RTOS , in questo caso l'evento è il pulsante premuto.
 ### il task vTaskBuzzerTest è in attesa di un evento (vTaskPuls) , quando questo evento si verifica viene messo a 1 il bit dell'eventgroup cosi facendo eseguire il task vTaskBuzzerTest.
 
 ### L'eventgroup è stato chiamato  xServo e (EVENT_RILEVA_OGGETTO) il bit 1 da modificare.
